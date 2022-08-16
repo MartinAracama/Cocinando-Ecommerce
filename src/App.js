@@ -7,16 +7,17 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className='Parrafo'>
+          Próximamente todo lo que necesitas para cocinar<br></br> 
+          lo encontraras en este sitio
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://google.com.ar"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          COCINANDO
         </a>
       </header>
     </div>

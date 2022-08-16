@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.Parrafo {
+  color: rgba(179, 210, 117, 0.996);
+  text-align: center;
+  font-size: 25px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0c1e41;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +31,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #86d3e8;
 }
 
 @keyframes App-logo-spin {
