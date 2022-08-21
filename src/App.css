@@ -5,8 +5,9 @@
 
 
 .header {
-    margin: 15px;
-    padding: 15px;
+    margin: 5px;
+    padding: 5px;
+    max-height: 110px;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -15,7 +16,7 @@
 .header .title {
     font-size: 35px;
     color: #F6AA1C;
-    padding: 20px;
+    padding: 3px;
     font-weight: 600;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .header .navbar .navbar-link {
@@ -34,4 +35,22 @@
     color: #F6AA1C;
     font-size: 20px;
     text-decoration: none;
+}
+
+.container {
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #BC3908;
+}
+
+.footer {
+    margin: 5px;
+    padding: 5px;
+    background-color: #621708;
+}
+
+.footer .texto {
+    padding: 3px;
+    color: #F6AA1C;
 }
