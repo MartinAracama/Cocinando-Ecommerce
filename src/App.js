@@ -6,10 +6,11 @@ import { ItemListContainer } from "./components/itemListContainer/itemListContai
 
 
 const App = () => {
-
+  
   return (
     <div>
-      <Header/>
+      <Header />
+      
       <ItemListContainer />
       <Footer/>
     </div>

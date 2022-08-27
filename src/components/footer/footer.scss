@@ -6,6 +6,7 @@
     padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100px;
     background-color: #621708;
     border-radius: 15px;
@@ -13,5 +14,6 @@
     .texto {
         padding: 3px;
         color: #F6AA1C;
+        text-align: center;
     }
 }
