@@ -1,0 +1,16 @@
+
+
+.container {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    height: 600px;
+    background-color: #bc3908;
+    border-radius: 15px;
+
+    .texto {
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(246, 198, 140);
+    }
+}
