@@ -6,8 +6,8 @@ export const Header = () => {
     return (
         <header className="header">
             <h1 className="title">COCINANDO</h1>
-            
             <nav className="navbar">
+            <img className="cart" src="./CartLogo.png" alt="logo carrito compras"></img>
                 <a className="navbar-link">Inicio</a>
                 <a className="navbar-link">Categorias</a>
                 <a className="navbar-link">Ofertas</a>
