@@ -16,7 +16,7 @@ export const ItemListContainer = () => {
     {
       id: 2,
       nombre: "Sartén Smeg Antiadherente 26cm",
-      descripción: "Fabricada en aluminio forjado en frío.Revestimiento antiadherente resistente a la abrasión. Mango de acero inoxidable frío.Base de acero de 4, 5mm.Excelente distribución del calor.",
+      descripcion: "Fabricada en aluminio forjado en frío.Revestimiento antiadherente resistente a la abrasión. Mango de acero inoxidable frío.Base de acero de 4, 5mm.Excelente distribución del calor.",
       img: "./img/sarten_smeg_antiadherente_26cm.jpg",
       precio: "$ 13.401.-",
       stock: 8
@@ -24,7 +24,7 @@ export const ItemListContainer = () => {
     {
       id: 3,
       nombre: "Sartén Dupla Prior 24cm",
-      descripción: "Fabricada en aluminio fundido muy resistente a la deformación (5,5mm de espesor en la base). Revestimiento antiadherente Teflón Classic 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico para un agarre agradable y seguro. Cocina asado con efecto horno: gracias a su junta aislante junto con el imán de su mango hace que se cree dentro de la sartén un efecto horno completamente uniforme.",
+      descripcion: "Fabricada en aluminio fundido muy resistente a la deformación (5,5mm de espesor en la base). Revestimiento antiadherente Teflón Classic 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico para un agarre agradable y seguro. Cocina asado con efecto horno.",
       img: "./img/sarten_dupla_prior_cerrada_24.jpg",
       precio: "$ 23.675.-",
       stock: 5

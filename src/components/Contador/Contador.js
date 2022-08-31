@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from "reactstrap"
 import { useState } from 'react'
+import "./Contador.scss"
 
 
 export const Contador = ({stock}) => {
@@ -9,7 +10,7 @@ export const Contador = ({stock}) => {
 
     
     const handleSumar = () => {
-      if(Contador < stock)
+      if(counter < stock)
       setCounter( counter + 1 )
     }
     
@@ -22,9 +23,11 @@ export const Contador = ({stock}) => {
 
   return (
     <div>
+      <div className="counter">
         <Button onClick={handleRestar}> - </Button>
-        <span> {counter} </span>
+        <span className='numero'> {counter} </span>
         <Button onClick={handleSumar}> + </Button>
+      </div>
         <Button style={{width: "100%", marginTop: "1rem"}}> Agregar al Carrito </Button>
     </div>
   )
