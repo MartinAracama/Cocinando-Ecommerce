@@ -1,5 +1,6 @@
 
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from "./components/header/header"
 import { Footer } from "./components/footer/footer"
 import { ItemListContainer } from "./components/itemListContainer/itemListContainer"
