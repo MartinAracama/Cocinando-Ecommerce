@@ -8,7 +8,7 @@ export const ItemListContainer = () => {
     {
       id: 1,
       nombre: "Sartén Efficient 30cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico en color negro con logo de BRA en naranja",
+      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción.",
       img: "./img/sarten_eficient_30cm.jpg",
       precio: "$ 19.937.-",
       stock: 10
@@ -40,7 +40,7 @@ export const ItemListContainer = () => {
     {
       id: 5,
       nombre: "Sartén Market Desmontable 28cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflon Profile de alta calidad, muy duradero y ultra resistente al rayado. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Fácil de desmontar. Mango de gran rigidez y fiabilidad. Madera fumigada y tratada con pintura de retraso de la llama y pintura transparente para su mejor conservación. Aptas para el lavavajillas sin el mango de madera. Apta para horno hasta 220º C sin el mango.",
+      descripcion: "Fabricada en aluminio fundido resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflon Profile de alta calidad, muy duradero y ultra resistente al rayado. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor.",
       img: "./img/sarten_market_desmontable_28cm.jpg",
       precio: "$ 23.654.-",
       stock: 10
@@ -56,7 +56,7 @@ export const ItemListContainer = () => {
     {
       id: 7,
       nombre: "Sartén Hondo Efficient 28cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico en color negro con logo de BRA en naranja.",
+      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico.",
       img: "./img/sarten_hondo_efficient_28cm.jpg",
       precio: "$ 18.126.-",
       stock: 4
@@ -64,7 +64,7 @@ export const ItemListContainer = () => {
     {
       id: 8,
       nombre: "Sartén Efficient Orange 24cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico con el característico color naranja de BRA.",
+      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico.",
       img: "./img/sarten_efficient_Orange_24cm.jpg",
       precio: "$ 13.627.-",
       stock: 6
