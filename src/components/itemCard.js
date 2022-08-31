@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Card, CardBody, CardFooter, CardHeader, CardText, CardTitle } from 'reactstrap'
 import { Contador } from "../components/Contador/Contador"
+import "./itemCard.scss"
 
 export const ItemCard = (props) => {
 
@@ -23,9 +24,9 @@ export const ItemCard = (props) => {
                     </CardText>
                     <Contador stock={stock} />
                 </CardBody>
-                <CardFooter>
-                    Stock {stock} - 
-                    {precio}
+                <CardFooter className='cardFooter'>
+                    Stock: {stock}  
+                    <span>{precio}</span>
                 </CardFooter>
             </Card>
         </>
