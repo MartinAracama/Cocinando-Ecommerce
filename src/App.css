@@ -4,7 +4,7 @@
 }
 
 body {
-    /* background: hsla(33, 100%, 53%, 1);
+    background: hsla(33, 100%, 53%, 1);
 
 background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
 
@@ -12,8 +12,8 @@ background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%
 
 background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 ); */
-
-background:-moz-radial-gradient(#F8EBA6, #FFD8C2);
-
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 )
 }
+
+/* background:-moz-radial-gradient(#F8EBA6, #FFD8C2); */
+
