@@ -9,9 +9,4 @@ export const pedirDatos = () => {
 }
 
 
-     // setTimeout(() => {
-     //     if (param) {
-     //     resolve("Promesa Resuelta")
-     //     } else {
-     //     reject("Promesa Rechazada")
-     // },  3000)
+   
