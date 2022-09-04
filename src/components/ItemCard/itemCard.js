@@ -1,11 +1,12 @@
 import React from 'react'
-import { Button, Card, CardBody, CardFooter, CardHeader, CardText, CardTitle } from 'reactstrap'
+import { Button, Card, CardBody, CardFooter, CardText, CardTitle } from 'reactstrap'
 import { Contador } from "../Contador/Contador"
 import "./itemCard.scss"
 
 export const ItemCard = (props) => {
 
     const {nombre, descripcion, img, precio, stock} = props;
+
     return (
         <>
             <Card
@@ -14,7 +15,7 @@ export const ItemCard = (props) => {
                     width: '18rem'
                 }}
             >
-                <img className='imgCard' src={img} />
+                <img className='imgCard' src={img} alt="sarten" />
                 <CardBody>
                     <CardTitle className='cardTitle'>
                         {nombre}
