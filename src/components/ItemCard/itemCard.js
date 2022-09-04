@@ -1,4 +1,3 @@
-import { blue } from '@mui/material/colors'
 import React from 'react'
 import { Button, Card, CardBody, CardFooter, CardHeader, CardText, CardTitle } from 'reactstrap'
 import { Contador } from "../Contador/Contador"
