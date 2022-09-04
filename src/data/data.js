@@ -15,7 +15,7 @@ export const productos = [
       descripcion: "Fabricada en aluminio forjado en frío.Revestimiento antiadherente resistente a la abrasión. Mango de acero inoxidable frío.Base de acero de 4, 5mm.Excelente distribución del calor.",
       img: "./img/sarten_smeg_antiadherente_26cm.jpg",
       precio: "$ 13.401.-",
-      stock: 8
+      stock: 12
     },
     {
       id: 3,
@@ -23,7 +23,7 @@ export const productos = [
       descripcion: "Fabricada en aluminio fundido muy resistente a la deformación (5,5mm de espesor en la base). Revestimiento antiadherente Teflón Classic 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico para un agarre agradable y seguro. Cocina asado con efecto horno.",
       img: "./img/sarten_dupla_prior_cerrada_24.jpg",
       precio: "$ 23.675.-",
-      stock: 5
+      stock: 15
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export const productos = [
       descripcion: "Fabricada en acero inoxidable 18/10 con triple fondo difusor para un reparto excelente de la temperatura. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico profesional fabricado también en acero inoxidable. Apta para lavavajillas.",
       img: "./img/sarten_signature_20cm.jpg",
       precio: "$ 13.306.-",
-      stock: 4
+      stock: 14
     },
     {
       id: 7,
@@ -55,7 +55,7 @@ export const productos = [
       descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico.",
       img: "./img/sarten_hondo_efficient_28cm.jpg",
       precio: "$ 18.126.-",
-      stock: 4
+      stock: 20
     },
     {
       id: 8,
