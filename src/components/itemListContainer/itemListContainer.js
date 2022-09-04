@@ -1,5 +1,5 @@
-import React from 'react'
-import { ItemCard } from "../itemCard.js"
+import React from 'react';
+import { ItemCard } from "../ItemCard/itemCard";
 import "./itemListContainer.scss"
 
 
@@ -81,7 +81,7 @@ export const ItemListContainer = () => {
       {
         productos.map(item => (
           <div className='col-3'>
-            <ItemCard key={item.id} nombre={item.nombre} descripcion={item.descripcion} img={item.img} precio={item.precio} stock={item.stock} />
+            <ItemCard key={item.id} nombre={item.nombre} img={item.img} precio={item.precio} stock={item.stock} />
           </div>
         ))
       }

@@ -1,7 +1,7 @@
 import { blue } from '@mui/material/colors'
 import React from 'react'
 import { Button, Card, CardBody, CardFooter, CardHeader, CardText, CardTitle } from 'reactstrap'
-import { Contador } from "../components/Contador/Contador"
+import { Contador } from "../Contador/Contador"
 import "./itemCard.scss"
 
 export const ItemCard = (props) => {
@@ -15,9 +15,9 @@ export const ItemCard = (props) => {
                     width: '18rem'
                 }}
             >
-                <img src={img} />
+                <img className='imgCard' src={img} />
                 <CardBody>
-                    <CardTitle tag="h5">
+                    <CardTitle className='cardTitle'>
                         {nombre}
                     </CardTitle>
                     <CardText>
