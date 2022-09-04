@@ -1,5 +1,6 @@
 import React from 'react'
 import { ItemCard } from "../itemCard.js"
+import "./itemListContainer.scss"
 
 
 export const ItemListContainer = () => {

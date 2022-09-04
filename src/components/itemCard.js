@@ -24,7 +24,9 @@ export const ItemCard = (props) => {
                         {descripcion}
                     </CardText>
                     <Contador stock={stock} />
-                    <Button style={{width: "100%", marginTop: "1rem", }}>Ver Detalle</Button>
+                <div>
+                    <Button className='cardButton' active block color="success" outline size="sm">Ver Detalle</Button>
+                </div>
                 </CardBody>
                 <CardFooter className='cardFooter'>
                     Stock: {stock}  
