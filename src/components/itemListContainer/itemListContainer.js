@@ -25,7 +25,7 @@ export const ItemListContainer = () => {
   
     
   return (
-      <div>
+      <div className='container'>
         <ItemCard productos={productos}/>
       </div>
   )

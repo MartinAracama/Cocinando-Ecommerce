@@ -1,0 +1,51 @@
+
+
+.container {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: auto;
+    background-color: rgb(252, 252, 251);
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+
+    .img {
+        margin: 3px;
+        padding: 3px;
+        max-width: 260px;
+        max-height: auto;
+    }
+    .titulo {
+        font-size: 1.15rem;
+        color: #621708;
+        text-align: center;
+        font-weight: 600;
+    }
+    .precio {
+        font-weight: 700;
+        text-align: center;
+    }
+    .stock {
+        color: #621708;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .descripcion {
+        margin: 3px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+}
