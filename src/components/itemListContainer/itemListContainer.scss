@@ -1,9 +1,11 @@
 
 
-.row {
+.container {
     margin: 5px;
     padding: 5px;
-    display: flex;
+    display: grid;
+    max-width: 99.2%;
+    grid-template-columns: repeat(4, 1fr);
     height: auto;
     background-color: #621708;
     border-radius: 15px;
