@@ -8,8 +8,7 @@ export const ItemListContainer = () => {
 
   const [productos, setProductos] = useState([])
 
-  
-
+ 
   useEffect(() => {
     pedirDatos()
       .then((data) => {
@@ -26,15 +25,16 @@ export const ItemListContainer = () => {
   
     
   return (
-    <div className='row'>
-      {
-        productos.map(item => (
-          <div className='col-3'>
-            <ItemCard key={item.id} nombre={item.nombre} img={item.img} precio={item.precio} stock={item.stock} />
-          </div>
-        ))
-      }
-    </div>
+      <div>
+        <ItemCard productos={productos}/>
+      </div>
   )
 }
 
+{/* {
+  productos.map(item => (
+    <div className='col-3'>
+      <ItemCard key={item.id} nombre={item.nombre} img={item.img} precio={item.precio} stock={item.stock} />
+    </div>
+  ))
+} */}
