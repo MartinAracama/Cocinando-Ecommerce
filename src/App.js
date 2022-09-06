@@ -5,6 +5,7 @@ import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { ItemListContainer } from "./components/itemListContainer/itemListContainer";
 import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { ItemDetailContainer } from './components/itemDetailContainer/itemDetailContainer';
 
 
 const App = () => {
@@ -12,19 +13,16 @@ const App = () => {
   return (
     
     <div>
-      <BrowserRouter>
-        
+             
         <Header />
                   
-        <Routes>
-          <Route path="/" element={ <ItemListContainer/> } />
-          <Route path="*" element={ <Navigate to="/"/> } />
-        </Routes>
-              
+        <ItemDetailContainer idProducto={1}/>      
+      
+        <ItemListContainer/> 
+      
         <Footer/>
       
-      </BrowserRouter>
-
+      
     </div>
   );
 }
