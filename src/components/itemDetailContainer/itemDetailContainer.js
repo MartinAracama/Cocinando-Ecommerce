@@ -1,38 +1,49 @@
 
 import { useEffect, useState } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { useParams } from 'react-router-dom';
-// import { pedirDatos } from '../../helpers/pedirDatos';
-// import { ItemDetail } from "./itemDetail/itemDetail"
+import { useParams } from 'react-router-dom';
+import { pedirDatos } from '../../helpers/pedirDatos';
+import { ItemDetail } from "../itemDetail/itemDetail"
 
 
 
-// export const ItemDetailContainer = () => {
+export const ItemDetailContainer = () => {
 
-//   const [productos, setProductos] = useState(null)
-//   // const {productosId} = useParams
+  const [item, setItem] = useState(null)
+  const [loading, setLoading] = useState(true)
 
-//   // console.log(productosId)
-//   // console.log(productos)
+  const {itemId} = useParams
+
+  console.log(itemId)
+  console.log(item)
 
  
-//   useEffect(() => {
-//     pedirDatos()
-//         .then((res) => {
-//             setItem( res.find((prod) => prod.id === Number (productosId)))
-//         })
-//         .catch(err => console.log(err))
+  useEffect(() => {
+    setLoading(true)
+
+    pedirDatos()
+        .then((data) => {
+            setItem( data.find((prod) => prod.id === Number(itemId)))
+        })
+        .catch(err => console.log(err))
+        .finally(() => {
+            setLoading(false)
+        })
 
 
-//   }, [])
+  }, [])
   
     
-//   return (
-//       <div>
-//         <h2>ItemDetailContainer</h2>
+  return (
+      <div>
+        {
+            loading
+            ? <h2>Cargando...</h2>
+            : <ItemDetail item={item}/>
+        }
+        
 
-//         {/* <ItemDetail producto={producto}/> */}
+        
 
-//       </div>
-//   )
-// }
+      </div>
+  )
+}

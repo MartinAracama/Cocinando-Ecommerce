@@ -10,11 +10,12 @@
     flex-flow: row wrap;
     background-color: #621708;
     border-radius: 15px;
-    
+        
     .title {
         justify-content: center;
         font-size: 35px;
         color: #F6AA1C;
+        text-decoration: none;
         padding: 3px;
         font-weight: 600;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -34,6 +35,7 @@
         color: #F6AA1C;
         font-size: 20px;
         text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .cart {

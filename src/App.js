@@ -25,10 +25,12 @@ const App = () => {
           <Routes>
 
             <Route path='/' element={  <ItemListContainer/>}/>
-            <Route path='/categorias' element={ <Categorias/> }/>
+            <Route path='/productos/:categoryId' element={ <ItemListContainer/> }/>
+            <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/>
+            {/* <Route path='/categorias' element={ <Categorias/> }/>
             <Route path='/ofertas' element={ <Ofertas/> }/>
             <Route path='/nosotros' element={ <Nosotros/> }/>
-            <Route path='/contacto' element={ <Contacto/> }/>
+            <Route path='/contacto' element={ <Contacto/> }/> */}
             {/* <Route path='*' element={ <Error404/> }/> */}
             <Route path='*' element={ <Navigate to="/"/> }/>
               
