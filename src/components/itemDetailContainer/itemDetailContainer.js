@@ -8,13 +8,13 @@ import { ItemDetail } from "../itemDetail/itemDetail"
 
 export const ItemDetailContainer = () => {
 
-  const [item, setItem] = useState(null)
+  const [productos, setProductos] = useState(null)
   const [loading, setLoading] = useState(true)
 
   const {itemId} = useParams
 
   console.log(itemId)
-  console.log(item)
+  console.log(productos)
 
  
   useEffect(() => {
@@ -22,7 +22,7 @@ export const ItemDetailContainer = () => {
 
     pedirDatos()
         .then((data) => {
-            setItem( data.find((prod) => prod.id === Number(itemId)))
+            setProductos( data.find((prod) => prod.id === Number(itemId)))
         })
         .catch(err => console.log(err))
         .finally(() => {
@@ -38,7 +38,7 @@ export const ItemDetailContainer = () => {
         {
             loading
             ? <h2>Cargando...</h2>
-            : <ItemDetail item={item}/>
+            : <ItemDetail productos={productos}/>
         }
         
 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { pedirDatos } from '../../helpers/pedirDatos';
 import { ItemCard } from "../ItemCard/itemCard";
-import "./itemListContainer.scss"
 import { useParams } from 'react-router-dom';
+import "./itemListContainer.scss"
 
 
 export const ItemListContainer = () => {
@@ -15,7 +15,7 @@ export const ItemListContainer = () => {
 
  
   useEffect(() => {
-      setLoading( true )
+      setLoading(true)
     pedirDatos()
       .then( (data) => {
           if (!categoryId) {

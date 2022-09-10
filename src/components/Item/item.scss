@@ -22,8 +22,8 @@
     border-radius: 15px;
 
     .img {
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         max-width: 260px;
         max-height: auto;
     }
@@ -35,6 +35,10 @@
     }
     .precio {
         font-weight: 700;
+        text-align: center;
+    }
+    .categoria {
+        font-size: 1rem;
         text-align: center;
     }
     .stock {

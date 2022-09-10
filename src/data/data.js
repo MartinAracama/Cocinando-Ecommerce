@@ -30,47 +30,47 @@ export const productos = [
     },
     {
       id: 4,
-      nombre: "Sartén Signature Pro. 30cm",
-      descripcion: "Fabricada en acero inoxidable 18/10 con triple fondo difusor para un reparto excelente de la temperatura. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico profesional fabricado también en acero inoxidable. Apta para lavavajillas.",
-      img: "./img/sarten_signature_30cm.jpg",
-      precio: "$ 21.145.-",
+      nombre: "Set Cuchillos Japoneses Solid",
+      descripcion: "Mango de polipropileno. Agarre firme y seguro. Cuchillo fileteado. Cuchillo Santoku Chef. Cuchillo Santoku. Cuchillo Mondador. Alta resistencia y durabilidad.Calidad profesional para el hogar.",
+      img: "./img/set_cuchillos_solid.jpg",
+      precio: "$ 12.067.-",
       stock: 5,
       category: "cuchillos"
     },
     {
       id: 5,
-      nombre: "Sartén Market Desmontable 28cm",
-      descripcion: "Fabricada en aluminio fundido resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflon Profile de alta calidad, muy duradero y ultra resistente al rayado. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor.",
-      img: "./img/sarten_market_desmontable_28cm.jpg",
-      precio: "$ 23.654.-",
+      nombre: "Cuchillo Cocinero Efficient",
+      descripcion: "Los cuchillos Efficient han sido diseñados para un uso diario con una gran calidad de corte, aumentado así el abanico de productos de la apreciada colección Efficient. Los cuchillos están fabricados en hoja de acero inoxidable alemán, Molibdeno Vanadio, de alta calidad, con una virola para la unión de la hoja y el mango, consiguiendo el equilibrado que permite un corte cómodo y seguro. El mango, fabricado en polipropileno, tiene un elegante diseño con ligeros apuntes en color naranja característicos de la serie Efficient, con una extensión de la hoja de acero inoxidable que recorre todo el mango internamente.",
+      img: "./img/cuchillo_cocinero_efficient.png",
+      precio: "$ 9.499.-",
       stock: 10,
       category: "cuchillos"
     },
     {
       id: 6,
-      nombre: "Sartén Signature Pro. 20cm",
-      descripcion: "Fabricada en acero inoxidable 18/10 con triple fondo difusor para un reparto excelente de la temperatura. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico profesional fabricado también en acero inoxidable. Apta para lavavajillas.",
-      img: "./img/sarten_signature_20cm.jpg",
-      precio: "$ 13.306.-",
+      nombre: "Cuchillo Santoku Efficient 18cm",
+      descripcion: "Hoja fabricada en acero inoxidable Molibdeno Vanadio. Mango de polipropileno con un agarre ergonómico, firme y muy seguro. Disponen de una alta resistencia y durabilidad, ideal para el uso diario en la cocina.",
+      img: "./img/cuchillo_santoku.png",
+      precio: "$ 9.133.-",
       stock: 14,
       category: "cuchillos"
     },
     {
       id: 7,
-      nombre: "Sartén Hondo Efficient 28cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico.",
-      img: "./img/sarten_hondo_efficient_28cm.jpg",
-      precio: "$ 18.126.-",
+      nombre: "Cacerola alta Market 20cm",
+      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflon Profile de alta calidad, muy duradero y ultra resistente al rayado. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Pomo con incrustación de madera de haya. Cuerpo apto para horno hasta 220ºC sin asas. (usar en el horno sin la tapa de cristal y las asas de madera). Aptas para el lavavajillas sin la tapa de cristal con pomo de madera y las asas de madera. Madera fumigada y tratada con pintura de retraso de la llama y pintura transparente para su mejor conservación. Incluye tapa de cristal.",
+      img: "./img/cacerola_alta_market_20.jpg",
+      precio: "$ 28.032.-",
       stock: 20,
-      category: "ollas"
+      category: "cacerolas"
     },
     {
       id: 8,
-      nombre: "Sartén Efficient Orange 24cm",
-      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Mango ergonómico.",
-      img: "./img/sarten_efficient_Orange_24cm.jpg",
-      precio: "$ 13.627.-",
+      nombre: "Cacerola Alta Signature 30cm",
+      descripcion: "Fabricada en acero inoxidable 18/10 muy higiénico y resistente al desgaste. Triple fondo full induction compatible con todas las fuentes de calor incluida la inducción. Apta para lavavajillas. Asas fabricadas en acero inoxidable. Tapa de vidrio con asa de acero inoxidable.",
+      img: "./img/cacerola_alta_signature_30.jpg",
+      precio: "$ 36.369.-",
       stock: 6,
-      category: "ollas"
+      category: "cacerolas"
     }
   ]
