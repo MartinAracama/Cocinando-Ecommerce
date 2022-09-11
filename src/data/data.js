@@ -72,5 +72,14 @@ export const productos = [
       precio: "$ 36.369.-",
       stock: 6,
       category: "cacerolas"
+    },
+    {
+      id: 9,
+      nombre: "Cacerola Baja Efficient 16cm",
+      descripcion: "Fabricada en aluminio fundido extremadamente resistente a la deformación (6mm de espesor en la base). Revestimiento antiadherente Teflón Platinum Plus de alta calidad y muy duradero. 100% libre de PFOA. Fondo full induction compatible con todas las fuentes de calor incluida la inducción. Incluye tapa de cristal.",
+      img: "../img/cacerola_baja_efficient_16.jpg",
+      precio: "$ 15.418.-",
+      stock: 16,
+      category: "cacerolas"
     }
   ]
