@@ -5,15 +5,15 @@
     margin: 5px;
     padding: 5px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: 100px;
-    background-color: #621708;
+    // background-color: #621708;
     border-radius: 15px;
     
     .texto {
         padding: 3px;
-        color: #F6AA1C;
+        color: #90210b;
         text-align: center;
     }
 }
