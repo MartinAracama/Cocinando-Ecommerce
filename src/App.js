@@ -8,8 +8,7 @@ import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import { ItemDetailContainer } from './components/itemDetailContainer/itemDetailContainer';
 import { Nosotros } from "./components/Nosotros/nosotros"
 import { Contacto } from "./components/Contacto/contacto"
-import { Categorias } from './components/Categorias/categorias';
-import { Ofertas } from './components/Ofertas/ofertas';
+
 
 
 const App = () => {
