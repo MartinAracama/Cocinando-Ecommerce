@@ -1,7 +1,7 @@
 import "./footer.scss"
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare   } from "react-icons/fa";
+
+
 export const Footer = () => {
 
     return (
@@ -9,11 +9,12 @@ export const Footer = () => {
             <div className="data">
             <p className="texto">Todos los derechos reservados</p>
             </div>
-            
-            <div className="iconos">
-                <FaFacebookSquare/>
-                <FaInstagramSquare/>
-                <FaTwitterSquare/>
+
+            <div>
+                <FaFacebookSquare style={{fontSize: "30px", color: "#902"}}/>
+                <FaInstagramSquare style={{fontSize: "30px", color: "#902"}}/>
+                <FaTwitterSquare style={{fontSize: "30px", color: "#902"}}/>
+                
             </div>
         </footer>
     )
