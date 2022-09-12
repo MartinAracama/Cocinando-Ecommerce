@@ -1,5 +1,6 @@
 import React from 'react'
-// import { Contador } from "../Contador/Contador"
+import { Contador } from "../Contador/Contador"
+import "./itemDetail.scss"
 
 
 
@@ -12,13 +13,13 @@ export const ItemDetail = ( {producto} ) => {
             <p className="precio">{producto.precio}</p>
             <p className="catagoria">Categoria:{producto.category}</p>
             <p className='descripcion'>{producto.descripcion}</p>
-            <small className="stock">{producto.stock}</small>
+            <small className="stock">Stock:{producto.stock}</small>
             <hr/>
 
-            {/* <Contador
+            <Contador
                 max={producto.stock}
                 producto={producto}
-            /> */}
+            />
             
         </div>
     )
