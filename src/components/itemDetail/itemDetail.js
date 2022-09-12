@@ -7,13 +7,12 @@ export const ItemDetail = ( {producto} ) => {
     
     return (
         <div className='container'>
-
-            <img src={producto.img}/>
-            <h3>{producto.nombre}</h3>
-            <h4>{producto.precio}</h4>
-            <p>{producto.category}</p>
-            <p>{producto.descripcion}</p>
-            <p>{producto.stock}</p>
+            <img className="img" src={producto.img}/>
+            <h4 className="titulo">{producto.nombre}</h4>
+            <p className="precio">{producto.precio}</p>
+            <p className="catagoria">Categoria:{producto.category}</p>
+            <p className='descripcion'>{producto.descripcion}</p>
+            <small className="stock">{producto.stock}</small>
             <hr/>
 
             {/* <Contador
