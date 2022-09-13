@@ -4,13 +4,13 @@ import { useState } from 'react'
 import "./Contador.scss"
 
 
-export const Contador = ({stock}) => {
+export const Contador = ({max}) => {
 
     const [counter, setCounter] = useState(0)
 
     
     const handleSumar = () => {
-      if(counter < stock)
+      if(counter < max)
       setCounter( counter + 1 )
     }
     

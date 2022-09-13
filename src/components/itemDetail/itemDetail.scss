@@ -1,43 +1,65 @@
 .container {
     display: flex;
-    flex-direction: column;
-    width: 290px;
-    height: auto;
-    background-color: rgb(252, 252, 251);
-    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
-    border-radius: 15px;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: row;
+    width: 100%vh;
+    height: 500px;
+    background-color: white;
+    
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        
+        .img {
+            // margin: 5px;
+            // padding: 5px;
+            max-width: 450px;
+            max-height: auto;
+        }
+        .titulo {
+            font-size: 1.5rem;
+            color: #621708;
+            text-align: center;
+            font-weight: 600;
+        }
 
-    .img {
-        margin: 5px;
-        padding: 5px;
-        max-width: 260px;
-        max-height: auto;
     }
-    .titulo {
-        font-size: 1.15rem;
-        color: #621708;
-        text-align: center;
-        font-weight: 600;
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        
+        .descripcion {
+            padding: 2px;
+            max-width: 420px;
+            text-align: justify;
+            font-size: 1rem;
+        }
+        .categoria {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #621708;
+        }
     }
+
+    .contador {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .precio {
+        font-size: 1.2rem;
+        color: #621708;
         font-weight: 700;
-        text-align: center;
-    }
-    .categoria {
-        font-size: 1rem;
         text-align: center;
     }
     .stock {
         color: #621708;
         font-size: 1rem;
         text-align: center;
-    }
-    .descripcion {
-        margin: 3px;
-        text-align: justify;
-        font-size: 1rem;
     }
 
 }
