@@ -1,4 +1,4 @@
-.container {
+.containerDetail {
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
@@ -11,13 +11,13 @@
         display: flex;
         flex-direction: column;
         
-        .img {
+        .imgDetail {
             // margin: 5px;
             // padding: 5px;
             max-width: 450px;
             max-height: auto;
         }
-        .titulo {
+        .titleDetail {
             font-size: 1.5rem;
             color: #621708;
             text-align: center;
@@ -26,19 +26,19 @@
 
     }
 
-    .cardContainer {
+    .cardContainerDetail {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 450px;
         
-        .descripcion {
+        .descripcionDetail {
             padding: 2px;
             max-width: 420px;
             text-align: justify;
             font-size: 1rem;
         }
-        .categoria {
+        .categoryDetail {
             font-size: 1.2rem;
             text-align: center;
             color: #621708;
@@ -50,13 +50,13 @@
         flex-direction: column;
     }
     
-    .precio {
+    .precioDetail {
         font-size: 1.2rem;
         color: #621708;
         font-weight: 700;
         text-align: center;
     }
-    .stock {
+    .stockDetail {
         color: #621708;
         font-size: 1rem;
         text-align: center;

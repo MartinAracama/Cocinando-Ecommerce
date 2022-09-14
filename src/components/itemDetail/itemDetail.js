@@ -7,26 +7,26 @@ import "./itemDetail.scss"
 export const ItemDetail = ( {producto} ) => {
     
     return (
-        <div className='container'>
+        <div className='containerDetail'>
             <div className='imgContainer'>
-                <h4 className="titulo">{producto.nombre}</h4>
+                <h4 className="titleDetail">{producto.nombre}</h4>
                 <hr/>
-                <img className="img" src={producto.img}/>
+                <img className="imgDetail" src={producto.img}/>
                 <hr/>
             </div>
-            <div className='cardContainer'>
-                 <p className="categoria">Categoria: {producto.category}</p>
-                 <p className='descripcion'>Características: {producto.descripcion}</p>
+            <div className='cardContainerDetail'>
+                 <p className="categoryDetail">Categoria: {producto.category}</p>
+                 <p className='descripcionDetail'>Características: {producto.descripcion}</p>
             </div>
             <hr/>
             <div className='contador'>
                 <hr/>
-                <p className="precio">Precio: {producto.precio}</p>
+                <p className="precioDetail">Precio: {producto.precio}</p>
                 <Contador
                     max={producto.stock}
                     producto={producto} />
                     <hr/>
-                <small className="stock">Stock: {producto.stock}</small>
+                <small className="stockDetail">Stock: {producto.stock}</small>
             </div>
             
         </div>
