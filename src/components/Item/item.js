@@ -7,9 +7,9 @@ export const Item = ( {producto} ) => {
   return (
         <div className='container'>
             <div className='cardContainer'>
-                <img className='img' src={producto.img}/>
+                <img className='img' src={producto.img} alt={producto.nombre}/>
                 <h4 className='titulo'>{producto.nombre}</h4>
-                <p className='precio'>Precio: {producto.precio}</p>
+                <p className='precio'>Precio: $ {producto.precio}</p>
                 <p className='categoria'>Categoria: {producto.category}</p>
                 <small className='stock'>Stock: {producto.stock}</small>
                 {/* <p className='descripcion'>{producto.descripcion}</p> */}

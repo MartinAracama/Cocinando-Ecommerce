@@ -11,7 +11,7 @@ export const ItemDetail = ( {producto} ) => {
             <div className='imgContainer'>
                 <h4 className="titleDetail">{producto.nombre}</h4>
                 <hr/>
-                <img className="imgDetail" src={producto.img}/>
+                <img className="imgDetail" src={producto.img} alt={producto.nombre}/>
                 <hr/>
             </div>
             <div className='cardContainerDetail'>
@@ -21,7 +21,7 @@ export const ItemDetail = ( {producto} ) => {
             <hr/>
             <div className='contador'>
                 <hr/>
-                <p className="precioDetail">Precio: {producto.precio}</p>
+                <p className="precioDetail">Precio: $ {producto.precio}</p>
                 <Contador
                     max={producto.stock}
                     producto={producto} />
