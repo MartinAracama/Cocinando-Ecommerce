@@ -30,7 +30,7 @@ export const ItemDetailContainer = () => {
         })
 
 
-  }, [])
+  }, [itemId])
   
     
   return (
