@@ -3,12 +3,10 @@
 .itemContainer {
     margin: 5px;
     padding: 5px;
-    max-width: 900px;
+    max-width: 1200vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5em;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    // background-color: #621708;
-    
 }

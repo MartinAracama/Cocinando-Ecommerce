@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { pedirDatos } from '../../helpers/pedirDatos';
 import { ItemCard } from "../ItemCard/itemCard";
 import { useParams } from 'react-router-dom';
+import { Spinner } from '../Spinner/spinner';
 import "./itemListContainer.scss"
 
 
@@ -39,7 +40,7 @@ export const ItemListContainer = () => {
       <div className='container'>
         {
           loading 
-          ? <h2>Cargando....</h2>
+          ? <Spinner />
           : <ItemCard productos={productos}/>
         }
       </div>

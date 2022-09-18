@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <header className="header">
 
-            <Link to="/" ><img className="imgHeader" src="../1x/Recurso 1.png" alt="logo cocinando"/></Link>
+            <Link to="/" ><img className="imgHeader" src="../1x/Recurso_1.png" alt="logo cocinando"/></Link>
             
             
             <nav className="navbar">
