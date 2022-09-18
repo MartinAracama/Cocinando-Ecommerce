@@ -17,6 +17,7 @@ export const ItemDetail = ( {producto} ) => {
             <div className='cardContainerDetail'>
                  <p className="categoryDetail">Categoria: {producto.category}</p>
                  <p className='descripcionDetail'>Características: {producto.descripcion}</p>
+                 
             </div>
             <hr/>
             <div className='contador'>
@@ -27,6 +28,10 @@ export const ItemDetail = ( {producto} ) => {
                     producto={producto} />
                     <hr/>
                 <small className="stockDetail">Stock: {producto.stock}</small>
+                <hr/>
+                <div>
+                    <img className='imgCounter' src="../img/utensillos1.png" alt="imagen utensillos"/>
+                </div>
             </div>
             
         </div>

@@ -7,7 +7,7 @@ export const Spinner = () => {
         <Watch
             height="60"
             width="60"
-            radius="48"
+            radius="45"
             color="#921708"
             ariaLabel="watch-loading"
             wrapperStyle={{}}
