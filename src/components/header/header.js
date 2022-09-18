@@ -8,8 +8,8 @@ export const Header = () => {
     return (
         <header className="header">
 
-            {/* <Link to="/" ><img src="../img/logo4.jpg" alt="logo cocinando"/></Link> */}
-            <Link className="title" to="/">COCINANDO</Link>
+            <Link to="/" ><img className="imgHeader" src="../1x/Recurso 1.png" alt="logo cocinando"/></Link>
+            
             
             <nav className="navbar">
                 <Cart/>

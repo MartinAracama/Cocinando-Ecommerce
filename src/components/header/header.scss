@@ -11,17 +11,21 @@
     background-color: #c9910e;
     border-radius: 15px;
 
-    .title {
-        text-decoration: none;
-        align-items: flex-start;
-        justify-content: center;
-        font-size: 2rem;
-        color: #90210b;
-        padding: 2px;
-        font-weight: 600;
-        font-family: 'Fredoka One', cursive;
-        
+    .imgHeader {
+        padding: 05px;
     }
+
+    // .title {
+    //     text-decoration: none;
+    //     align-items: flex-start;
+    //     justify-content: center;
+    //     font-size: 2rem;
+    //     color: #90210b;
+    //     padding: 2px;
+    //     font-weight: 600;
+    //     font-family: 'Fredoka One', cursive;
+        
+    // }
         
     .navbar {
         display: flex;
