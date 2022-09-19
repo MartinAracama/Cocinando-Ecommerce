@@ -4,22 +4,22 @@ import { useState } from 'react'
 import "./Contador.scss"
 
 
-export const Contador = ({max}) => {
+export const Contador = ({max, counter, setCounter, handleAgregar}) => {
 
-    const [counter, setCounter] = useState(0)
+    // const [counter, setCounter] = useState(1)
 
-    
-    const handleSumar = () => {
-      if(counter < max)
-      setCounter( counter + 1 )
-    }
-    
     const handleRestar = () => {
-      if (counter > 0) {
+      if (counter > 1) {
         setCounter( counter - 1 )
       }
     }
     
+    const handleSumar = () => {
+      if(counter < max) {
+        setCounter( counter + 1 )
+      }
+    }
+
 
   return (
     <div>
@@ -28,7 +28,7 @@ export const Contador = ({max}) => {
         <span className='numero'> {counter} </span>
         <Button onClick={handleSumar}> + </Button>
       </div>
-        <Button style={{width: "100%", marginTop: "1rem"}}> Agregar al Carrito </Button>
+        <Button onClick={handleAgregar} style={{width: "100%", marginTop: "1rem"}}> Agregar al Carrito </Button>
     </div>
   )
 }

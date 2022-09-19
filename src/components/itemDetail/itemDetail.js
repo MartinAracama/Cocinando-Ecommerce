@@ -1,10 +1,26 @@
 import React from 'react'
 import { Contador } from "../Contador/Contador"
+import { useState } from 'react'
 import "./itemDetail.scss"
 
 
 
 export const ItemDetail = ( {producto} ) => {
+
+    const [cantidad, setCantidad] = useState(1)
+
+    const handleAgregar = () => {
+        const productoToCart = {
+            id: producto.id,
+            nombre: producto.nombre,
+            precio: producto.precio,
+            cantidad
+        }
+        console.log(productoToCart)
+
+        // console.log({...producto, cantidad})
+  
+    }
     
     return (
         <div className='containerDetail'>
@@ -25,7 +41,10 @@ export const ItemDetail = ( {producto} ) => {
                 <p className="precioDetail">Precio: $ {producto.precio}</p>
                 <Contador
                     max={producto.stock}
-                    producto={producto} />
+                    counter={cantidad}
+                    setCounter={setCantidad}
+                    handleAgregar={handleAgregar}
+                    />
                     <hr/>
                 <small className="stockDetail">Stock: {producto.stock}</small>
                 <hr/>
