@@ -42,10 +42,6 @@ export const ItemDetailContainer = () => {
             ? <Spinner />
             : <ItemDetail producto={producto}/>
         }
-        
-
-        
-
       </div>
   )
 }

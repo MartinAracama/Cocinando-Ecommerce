@@ -1,14 +1,14 @@
 
 
-.container {
-    margin: 5px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 4;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
+// .container {
+//     margin: 5px;
+//     padding: 5px;
+//     display: grid;
+//     // grid-template-columns: 4;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     align-items: center;
+// }
 
 .cardContainer {
     display: flex;
@@ -38,6 +38,7 @@
         font-weight: 700;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
+        color: rgb(69, 68, 68);
     }
     .categoria {
         font-size: 0.85rem;
@@ -50,6 +51,11 @@
         font-size: 0.9rem;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
+    }
+    .boton {
+        padding: 5px;
+        margin: 5px;
+        align-self: center;
     }
     .descripcion {
         margin: 3px;

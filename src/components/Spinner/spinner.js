@@ -5,8 +5,8 @@ export const Spinner = () => {
   return (
     <div>
         <Watch
-            height="60"
-            width="60"
+            height="90"
+            width="90"
             radius="45"
             color="#921708"
             ariaLabel="watch-loading"
