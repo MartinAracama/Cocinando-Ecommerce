@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from "reactstrap"
-import { useState } from 'react'
+// import { useState } from 'react'
 import "./Contador.scss"
 
 
