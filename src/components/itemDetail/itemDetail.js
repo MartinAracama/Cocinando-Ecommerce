@@ -1,11 +1,16 @@
-import React from 'react'
+import { useContext, useState } from 'react'
 import { Contador } from "../Contador/Contador"
-import { useState } from 'react'
+import { CartContext } from '../../Context/CartContext'
+import { Link } from "react-router-dom"
 import "./itemDetail.scss"
 
 
 
+
 export const ItemDetail = ( {producto} ) => {
+
+    const { cart, addToCart, isInCart } = useContext(CartContext)
+    console.log(cart)
 
     const [cantidad, setCantidad] = useState(1)
 
@@ -16,10 +21,10 @@ export const ItemDetail = ( {producto} ) => {
             precio: producto.precio,
             cantidad
         }
-        console.log(productoToCart)
+        
+        addToCart(productoToCart)
 
-        // console.log({...producto, cantidad})
-  
+          
     }
     
     return (
@@ -39,16 +44,23 @@ export const ItemDetail = ( {producto} ) => {
             <div className='contador'>
                 <hr/>
                 <p className="precioDetail">Precio: $ {producto.precio}</p>
-                <Contador
-                    max={producto.stock}
-                    counter={cantidad}
-                    setCounter={setCantidad}
-                    handleAgregar={handleAgregar}
-                    />
+
+                {
+                    isInCart(producto.id)
+                    ?   <Link to="/cart" className="btn btn-success my-2">Terminar Compra</Link>
+                    :   <Contador
+                            max={producto.stock}
+                            counter={cantidad}
+                            setCounter={setCantidad}
+                            handleAgregar={handleAgregar}
+                        />
+                    
+                }
                     <hr/>
-                <small className="stockDetail">Stock: {producto.stock}</small>
-                <hr/>
-                <div>
+                    <small className="stockDetail">Stock: {producto.stock}</small>
+                    <hr/>
+                    <div>
+
                     <img className='imgCounter' src="../img/utensillos1.png" alt="imagen utensillos"/>
                 </div>
             </div>

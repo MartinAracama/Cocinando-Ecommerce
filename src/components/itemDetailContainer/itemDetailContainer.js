@@ -14,10 +14,6 @@ export const ItemDetailContainer = () => {
 
   const {itemId} = useParams()
 
-  console.log(itemId)
-  console.log(producto)
-
- 
   useEffect(() => {
     setLoading(true)
 

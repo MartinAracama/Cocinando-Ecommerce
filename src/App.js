@@ -8,15 +8,18 @@ import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import { ItemDetailContainer } from './components/itemDetailContainer/itemDetailContainer';
 import { Nosotros } from "./components/Nosotros/nosotros"
 import { Contacto } from "./components/Contacto/contacto"
+import { CartCustomProvider } from "./Context/CartContext";
 
+import { Cart } from './components/Cart/cart';
 
 
 const App = () => {
-  
-  return (
-    
-    <div>
 
+
+
+  return (
+    <CartCustomProvider> 
+    
         <BrowserRouter>
             
           <Header />
@@ -26,7 +29,7 @@ const App = () => {
             <Route path='/' element={  <ItemListContainer/>}/>
             <Route path='/productos/:categoryId' element={ <ItemListContainer/> }/>
             <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/>
-                        
+            <Route path='/cart' element={ <Cart/> }/>
             <Route path='/nosotros' element={ <Nosotros/> }/>
             <Route path='/contacto' element={ <Contacto/> }/>
             
@@ -38,7 +41,7 @@ const App = () => {
           
         </BrowserRouter>
              
-    </div>
+    </CartCustomProvider>
   );
 }
 

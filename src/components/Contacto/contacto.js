@@ -1,4 +1,3 @@
-import React from 'react'
 import "./contacto.scss"
 
 export const Contacto = () => {
