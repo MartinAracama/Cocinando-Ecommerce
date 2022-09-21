@@ -10,8 +10,10 @@ export const CartWidget = () => {
 
   return (
     <Link to="/cart">
-        <FaShoppingCart style={{color: "#902", fontSize: "40px"}} />
+      <div className='cart'>
+        <FaShoppingCart style={{color: "#c9910e", fontSize: "40px"}} />
         <span className='cartQ'>{cartQ()}</span>
+      </div>
     </Link>
   )
 }

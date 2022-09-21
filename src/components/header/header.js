@@ -8,11 +8,13 @@ export const Header = () => {
     return (
         <header className="header">
 
-            <Link to="/" ><img className="imgHeader" src="./img/Recurso_1.png" alt="logo cocinando"/></Link>
+            <div className="logo">
+            <Link to="/" ><img className="imgHeader" src="./img/logo_cooking.png" alt="logo cocinando"/></Link>
+            </div>
+
             
             
             <nav className="navbar">
-                <CartWidget/>
                             
                 <Link to="/productos/sartenes" className="navbar-link">Sartenes</Link>
                 <Link to="/productos/cuchillos" className="navbar-link">Cuchillos</Link>
@@ -20,6 +22,7 @@ export const Header = () => {
                 <Link to="/nosotros" className="navbar-link">Nosotros</Link>
                 <Link to="/contacto" className="navbar-link">Contacto</Link>
             </nav>
+                <CartWidget/>
 
         </header>
     )

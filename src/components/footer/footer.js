@@ -11,9 +11,9 @@ export const Footer = () => {
             </div>
 
             <div>
-                <FaFacebookSquare style={{fontSize: "30px", color: "#902"}}/>
-                <FaInstagramSquare style={{fontSize: "30px", color: "#902"}}/>
-                <FaTwitterSquare style={{fontSize: "30px", color: "#902"}}/>
+                <FaFacebookSquare style={{fontSize: "30px", color: "#c9910e"}}/>
+                <FaInstagramSquare style={{fontSize: "30px", color: "#c9910e"}}/>
+                <FaTwitterSquare style={{fontSize: "30px", color: "#c9910e"}}/>
                 
             </div>
         </footer>

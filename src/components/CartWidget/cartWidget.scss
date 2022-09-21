@@ -1,16 +1,24 @@
-.cartQ {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 0;
-    left: 3%;
-    background: #921708;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(241, 167, 83);
-    padding: 2px;
+
+
+.cart {
+    padding: 35px;
+    
+    .cartQ {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        position: relative;
+        top: -60px;
+        left: 98%;
+        text-decoration: none;
+        background: #c9910e;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #921708;
+        padding: 5px;
+    }
+
 }
