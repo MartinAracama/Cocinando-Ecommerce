@@ -8,6 +8,10 @@
     width: 90%vh;
     height: 460px;
     background-color: white;
+
+    .containerDetail:hover {
+        transform: scale (1.2);
+    }
     
     .imgContainer {
         display: flex;
@@ -47,7 +51,6 @@
             font-size: 1.2rem;
             text-align: center;
             color: rgb(223, 94, 19);
-            // color: #621708;
             font-family: 'Montserrat', sans-serif;
         }
     }

@@ -1,6 +1,6 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import { Contador } from "../Contador/Contador"
-import { CartContext } from '../../Context/CartContext'
+import { useCartContext } from '../../Context/CartContext'
 import { Link } from "react-router-dom"
 import "./itemDetail.scss"
 
@@ -9,7 +9,7 @@ import "./itemDetail.scss"
 
 export const ItemDetail = ( {producto} ) => {
 
-    const { cart, addToCart, isInCart } = useContext(CartContext)
+    const { cart, addToCart, isInCart } = useCartContext()
     console.log(cart)
 
     const [cantidad, setCantidad] = useState(1)

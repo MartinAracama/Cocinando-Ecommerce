@@ -1,15 +1,5 @@
 
 
-// .container {
-//     margin: 5px;
-//     padding: 5px;
-//     display: grid;
-//     // grid-template-columns: 4;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     align-items: center;
-// }
-
 .cardContainer {
     display: flex;
     flex-direction: column;
@@ -63,4 +53,9 @@
         font-size: 1rem;
     }
 
+}
+
+.cardContainer:hover {
+    transform: scale(1.07);
+    cursor: pointer;
 }

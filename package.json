@@ -21,6 +21,7 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.4",
     "sass": "^1.54.5",
+    "sweetalert2": "^11.4.33",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

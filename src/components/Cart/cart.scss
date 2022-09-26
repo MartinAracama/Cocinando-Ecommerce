@@ -1,0 +1,67 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    max-width: 450px;
+    justify-content: center;
+    align-content: center;
+    background-color: #921708;
+    border: solid 3px;
+    border-color: #c9910e;
+    border-radius: 8px;
+
+    .hr {
+        color: #e6ab23;
+        border: 1px solid;
+    }
+    
+    .cartTitulo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        color: #e6ab23;
+    }
+
+    .cartTotal {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        color: #e6ab23;
+        text-align: center;
+    }
+}
+
+.cartDetalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    .cartProducto {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        color: #f9d682;
+        text-align: center;
+    }
+    
+    .cartPrecio {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        color: #f9d682;
+    }
+    
+    .cartCantidad {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        color: #f9d682;
+    }
+    
+    .hr {
+        color: #c9910e;
+        border: 1px solid; 
+    }
+}
+
+
+
+  
