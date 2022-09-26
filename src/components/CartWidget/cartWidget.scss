@@ -1,7 +1,10 @@
-
+.cartLogo {
+    text-decoration: none;
+}
 
 .cart {
     padding: 35px;
+    text-decoration: none;
     
     .cartQ {
         font-family: 'Montserrat', sans-serif;
@@ -9,7 +12,6 @@
         position: relative;
         top: -60px;
         left: 98%;
-        text-decoration: none;
         background: #c9910e;
         width: 25px;
         height: 25px;

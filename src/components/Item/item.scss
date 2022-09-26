@@ -10,13 +10,14 @@
     -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
     border-radius: 15px;
-
+    text-decoration: none;
     .img {
         margin: 5px;
         padding: 5px;
         max-width: 260px;
         max-height: auto;
     }
+    
     .titulo {
         font-size: 1rem;
         color: #621708;
@@ -24,6 +25,7 @@
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
     }
+    
     .precio {
         font-weight: 700;
         text-align: center;
@@ -52,8 +54,10 @@
         text-align: justify;
         font-size: 1rem;
     }
-
 }
+
+
+
 
 .cardContainer:hover {
     transform: scale(1.07);
