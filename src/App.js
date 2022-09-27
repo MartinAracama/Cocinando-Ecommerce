@@ -9,8 +9,9 @@ import { ItemDetailContainer } from './components/itemDetailContainer/itemDetail
 import { Nosotros } from "./components/Nosotros/nosotros"
 import { Contacto } from "./components/Contacto/contacto"
 import { CartCustomProvider } from "./Context/CartContext";
-
 import { Cart } from './components/Cart/cart';
+import { LoginProvider } from './Context/LoginContext';
+import { LoginScreen } from "./components/LoginScreen/LoginScreen"
 
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
 
 
   return (
-    <CartCustomProvider> 
+    <LoginProvider>
+      <CartCustomProvider> 
     
         <BrowserRouter>
             
@@ -29,6 +31,7 @@ const App = () => {
             <Route path='/' element={  <ItemListContainer/>}/>
             <Route path='/productos/:categoryId' element={ <ItemListContainer/> }/>
             <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/>
+            <Route path='/login' element={ <LoginScreen/> }/>
             <Route path='/cart' element={ <Cart/> }/>
             <Route path='/nosotros' element={ <Nosotros/> }/>
             <Route path='/contacto' element={ <Contacto/> }/>
@@ -41,7 +44,8 @@ const App = () => {
           
         </BrowserRouter>
              
-    </CartCustomProvider>
+      </CartCustomProvider>
+    </LoginProvider>
   );
 }
 
