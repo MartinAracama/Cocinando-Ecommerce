@@ -5,7 +5,7 @@ import { ItemCard } from "../ItemCard/itemCard";
 import { useParams } from 'react-router-dom';
 import { Spinner } from '../Spinner/spinner';
 import { db } from "../../Firebase/config"
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 
 export const ItemListContainer = () => {
@@ -22,18 +22,20 @@ export const ItemListContainer = () => {
 
       const productosRef = collection(db, "Data")
 
-      getDocs(productosRef)
-        .then((snapshot) => {
-          const productosDB = snapshot.docs.map( (doc) => ({id: doc.id, ...doc.data()}) )
-           console.log(productosDB)
+      const q = categoryId
+                ? query(productosRef, where("category", "==", categoryId) )
+                : productosRef
 
-           setProductos(productosDB)
-        })
-        .finally(() => {
-          setLoading(false)
-        })
-
-        
+      getDocs(q)
+          .then((snapshot) => {
+            const productosDB = snapshot.docs.map( (doc) => ({id: doc.id, ...doc.data()}) )
+             console.log(productosDB)
+  
+             setProductos(productosDB)
+          })
+          .finally(() => {
+            setLoading(false)
+          })
   }, [categoryId])
 
       // pedirDatos()

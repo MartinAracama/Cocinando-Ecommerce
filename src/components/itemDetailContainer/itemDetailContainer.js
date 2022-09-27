@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 // import { pedirDatos } from '../../helpers/pedirDatos';
 import { ItemDetail } from "../itemDetail/itemDetail"
 import { Spinner } from '../Spinner/spinner';
-import { doc, getDoc, getDocFromServer } from "firebase/firestore"
+import { doc, getDoc } from "firebase/firestore"
 import { db } from '../../Firebase/config';
 
 
@@ -28,8 +28,10 @@ export const ItemDetailContainer = () => {
       .finally(() => {
         setLoading(false)
       })
-
-
+     
+      
+    }, [itemId])
+    
     // pedirDatos()
     //     .then((data) => {
     //         setProducto( data.find((prod) => prod.id === Number(itemId)))
@@ -38,10 +40,6 @@ export const ItemDetailContainer = () => {
     //     .finally(() => {
     //         setLoading(false)
     //     })
-
-
-  }, [itemId])
-  
     
   return (
     // producto &&
