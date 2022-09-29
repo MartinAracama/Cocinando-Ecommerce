@@ -49,7 +49,7 @@ export const Checkout = () => {
         getDoc(docRef)
             .then((doc) => {
 
-                if (doc.data().stock <= item.cantidad) {
+                if (doc.data().stock >= item.cantidad) {
 
                     updateDoc(docRef, {
                         stock: doc.data().stock - item.cantidad 
