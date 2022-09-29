@@ -11,11 +11,6 @@
     border-color: #c9910e;
     border-radius: 8px;
 
-    .hr {
-        color: #e6ab23;
-        border: 1px solid;
-    }
-    
     .cartTitulo {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.8rem;
@@ -28,6 +23,11 @@
         color: #e6ab23;
         text-align: center;
     }
+}
+
+hr {
+    color: rgb(223, 94, 19);
+    border: 0.2px solid;
 }
 
 .cartDetalle {
@@ -56,10 +56,6 @@
         color: #f9d682;
     }
     
-    .hr {
-        color: #c9910e;
-        border: 1px solid; 
-    }
 }
 
 

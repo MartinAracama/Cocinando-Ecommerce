@@ -38,9 +38,9 @@ export const ItemDetail = ( {producto} ) => {
             <div className='cardContainerDetail'>
                  <p className="categoryDetail">Categoria: {producto.category}</p>
                  <p className='descripcionDetail'>Características: {producto.descripcion}</p>
+                 <hr/>
                  
             </div>
-            <hr/>
             <div className='contador'>
                 <hr/>
                 <p className="precioDetail">Precio: $ {producto.precio}</p>

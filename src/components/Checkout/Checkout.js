@@ -53,7 +53,14 @@ export const Checkout = () => {
 
                     updateDoc(docRef, {
                         stock: doc.data().stock - item.cantidad 
-                }) 
+                })
+                
+                    addDoc(ordenesRef, orden)
+                        .then((doc) => {
+                        console.log(doc.id)
+                        finalizarCompra(doc.id)
+        })
+                
                 } else {
                 alert("No hay stock sufciente")
                 }
@@ -61,12 +68,7 @@ export const Checkout = () => {
                 
     })
     
-        addDoc(ordenesRef, orden)
-            .then((doc) => {
-            console.log(doc.id)
-            finalizarCompra(doc.id)
-
-        })
+        
 }
 
     if (cart.length === 0) {

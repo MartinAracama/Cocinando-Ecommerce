@@ -31,14 +31,7 @@ export const ItemDetailContainer = () => {
       
     }, [itemId])
     
-    // pedirDatos()
-    //     .then((data) => {
-    //         setProducto( data.find((prod) => prod.id === Number(itemId)))
-    //     })
-    //     .catch(err => console.log(err))
-    //     .finally(() => {
-    //         setLoading(false)
-    //     })
+    
     
   return (
     // producto &&
