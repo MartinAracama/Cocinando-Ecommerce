@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import { Header } from "./components/header/header";
@@ -12,7 +11,7 @@ import { CartCustomProvider } from "./Context/CartContext";
 import { Cart } from './components/Cart/cart';
 import { LoginProvider } from './Context/LoginContext';
 import { LoginScreen } from "./components/LoginScreen/LoginScreen"
-
+import { Checkout } from './components/Checkout/Checkout';
 
 const App = () => {
 
@@ -33,6 +32,7 @@ const App = () => {
             <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/>
             <Route path='/login' element={ <LoginScreen/> }/>
             <Route path='/cart' element={ <Cart/> }/>
+            <Route path='/checkout' element={<Checkout/>}/>
             <Route path='/nosotros' element={ <Nosotros/> }/>
             <Route path='/contacto' element={ <Contacto/> }/>
             

@@ -50,6 +50,17 @@ export const CartCustomProvider = ({children}) => {
           })
     }
 
+    const finalizarCompra = (id) => {
+        Swal.fire({
+          title: 'Compra Registrada',
+            text: `Tu número de orden es: ${id}`,
+            icon: 'success',
+            confirmButtonText: 'Felicitaciones!!'
+        }) 
+        setCart([])    
+    }
+
+    
     return (
         <CartContext.Provider value={ {
             cart,
@@ -58,7 +69,8 @@ export const CartCustomProvider = ({children}) => {
             cartQ,
             cartTotal,
             vaciarCarrito,
-            eliminarProducto
+            eliminarProducto,
+            finalizarCompra,
         }}> 
             {children}
         </CartContext.Provider>

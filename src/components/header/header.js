@@ -12,8 +12,6 @@ export const Header = () => {
             <Link to="/" ><img className="imgHeader" src="./img/logo_cooking.png" alt="logo cocinando"/></Link>
             </div>
 
-            
-            
             <nav className="navbar">
                             
                 <Link to="/productos/sartenes" className="navbar-link">Sartenes</Link>
