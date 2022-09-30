@@ -1,3 +1,21 @@
-.titulo {
-    color: #921708;
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    
+    .titulo {
+        color: #921708;
+        font-family: 'Montserrat', sans-serif;
+        margin: 5px
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        gap: 7px;
+        border-radius: 5px;
+    }
 }
+
