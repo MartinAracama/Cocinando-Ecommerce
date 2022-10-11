@@ -25,7 +25,7 @@ export const LoginScreen = () => {
         e.preventDefault()
         
         login({
-            email,pass
+            email, pass
         })
     }
   

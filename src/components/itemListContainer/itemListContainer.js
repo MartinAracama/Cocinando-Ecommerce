@@ -37,31 +37,15 @@ export const ItemListContainer = () => {
           })
   }, [categoryId])
 
-      // pedirDatos()
-      //   .then( (data) => {
-      //       if (!categoryId) {
-      //         setProductos(data)
-      //       } else {
-      //           setProductos( data.filter((prod) => prod.category === categoryId) )
-      //       }
-      //   })
-      //   .catch((error) => {
-      //       console.log(error)
-      //   })
-      //   .finally(() => {
-      //     setLoading(false)
-            
-      //   })
-  
-    
+     
   return (
       <div className='container'>
-        {
-          loading 
-          ? <Spinner />
-          : <ItemCard productos={productos}/>
-        }
-      </div>
+              {
+                  loading 
+                  ? <Spinner />
+                  : <ItemCard productos={productos}/>
+              }
+            </div>
   )
 }
 

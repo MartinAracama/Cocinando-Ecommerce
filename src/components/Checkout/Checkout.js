@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { useCartContext } from '../../Context/CartContext'
-import { addDoc, collection, doc, getDoc, updateDoc } from 'firebase/firestore'
+import { addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from '../../Firebase/config'
 
 export const Checkout = () => {
@@ -22,8 +22,8 @@ export const Checkout = () => {
         })
     }
 
-    const handleSubmit = (e)   => {
-    e.preventDefault()
+    const handleSubmit = async (e)   => {
+        e.preventDefault()
 
     const orden = {
         comprador: values,
@@ -41,35 +41,43 @@ export const Checkout = () => {
         return
     }
     
+    const batch = writeBatch(db)
     const ordenesRef = collection(db, "ordenes")
+    const productosRef = collection(db, "Data")
 
-    cart.forEach((item) => {
-        const docRef = doc(db, "Data", item.id)
+    const q = query(productosRef, where(documentId(), "in", cart.map(item => item.id)))
 
-        getDoc(docRef)
-            .then((doc) => {
+    const Data = await getDocs(q)
 
-                if (doc.data().stock >= item.cantidad) {
+    const outOfStock = []
 
-                    updateDoc(docRef, {
-                        stock: doc.data().stock - item.cantidad 
-                })
-                
-                    addDoc(ordenesRef, orden)
-                        .then((doc) => {
-                        console.log(doc.id)
-                        finalizarCompra(doc.id)
-        })
-                
-                } else {
-                alert("No hay stock sufciente")
-                }
-        })
-                
-    })
-    
-        
+    Data.docs.forEach((doc) => {
+         const itemInCart = cart.find(item => item.id === doc.id)
+
+         if (doc.data().stock >= itemInCart.cantidad) {
+             batch.update(doc.ref, {
+                 stock: doc.data().stock - itemInCart.cantidad
+             })
+         } else {
+             outOfStock.push(itemInCart)
+         }
+     })
+
+     if (outOfStock.length === 0) {
+         batch.commit()
+              .then(() => {
+                 addDoc(ordenesRef, orden)
+                     .then((doc) => {
+                         console.log(doc.id)
+                         finalizarCompra(doc.id)
+                     })
+              })
+     } else {
+         alert("Hay items sin sotock")
+         console.log(outOfStock)
+     }
 }
+
 
     if (cart.length === 0) {
         return <Navigate to="/"/>

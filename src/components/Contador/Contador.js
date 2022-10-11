@@ -1,14 +1,11 @@
 import React from 'react'
 import { Button } from "reactstrap"
-// import { useState } from 'react'
 import "./Contador.scss"
 
 
 export const Contador = ({max, counter, setCounter, handleAgregar}) => {
 
-    // const [counter, setCounter] = useState(1)
-
-    const handleRestar = () => {
+  const handleRestar = () => {
       if (counter > 1) {
         setCounter( counter - 1 )
       }

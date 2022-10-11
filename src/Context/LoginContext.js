@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"
+import { createContext, useContext, useState } from "react"
 
 
 export const LoginContext = createContext()
@@ -56,4 +56,8 @@ export const LoginProvider = ({children}) => {
             {children}
         </LoginContext.Provider>
     )
+}
+
+export const useLoginContext = () => {
+    return useContext(LoginContext)
 }

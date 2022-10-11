@@ -27,12 +27,12 @@ const App = () => {
 
           <Routes>
 
-            <Route path='/' element={  <ItemListContainer/>}/>
+            <Route path='/' element={  <ItemListContainer/> }/>
             <Route path='/productos/:categoryId' element={ <ItemListContainer/> }/>
             <Route path='/item/:itemId' element={ <ItemDetailContainer/> }/>
             <Route path='/login' element={ <LoginScreen/> }/>
             <Route path='/cart' element={ <Cart/> }/>
-            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/checkout' element={ <Checkout/> }/>
             <Route path='/nosotros' element={ <Nosotros/> }/>
             <Route path='/contacto' element={ <Contacto/> }/>
             

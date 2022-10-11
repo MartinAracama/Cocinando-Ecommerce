@@ -34,7 +34,6 @@ export const ItemDetailContainer = () => {
     
     
   return (
-    // producto &&
       <div>
         {
             loading
