@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom'
 import { useCartContext } from '../../Context/CartContext'
 import { addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from '../../Firebase/config'
+import "./Checkout.scss"
 
 export const Checkout = () => {
 
@@ -11,6 +12,7 @@ export const Checkout = () => {
     const [values, setValues] = useState({
         nombre: "",
         email: "",
+        celular: "",
         direccion: "",
     })
 
@@ -38,6 +40,11 @@ export const Checkout = () => {
     
     if (values.email.length < 2) {
         alert("Email Incorrecto")
+        return
+    }
+
+    if (values.celular.length < 8) {
+        alert("Ingrese un numero de celular valido")
         return
     }
     
@@ -86,17 +93,17 @@ export const Checkout = () => {
     return (
         <div className='container'>
 
-            <h2>Checkout</h2>
+            <h2 className='titleCheckout'>Checkout</h2>
         
 
-            <form onSubmit={handleSubmit}>
+            <form className='formulario' onSubmit={handleSubmit}>
                 <input
                 name='nombre'
                 value={values.nombre}
                 onChange={handleInputChange}
                 type={"text"} 
-                className="my-3 form-control" 
-                placeholder='Tu nombre'
+                className="my-4 form-control" 
+                placeholder='Nombre y apellido'
                 />
 
                 <input
@@ -104,8 +111,17 @@ export const Checkout = () => {
                 value={values.email} 
                 onChange={handleInputChange}
                 type={"email"} 
-                className="my-3 form-control" 
+                className="my-4 form-control" 
                 placeholder='Email'
+                />
+
+                <input
+                name='celular'
+                value={values.celular}
+                onChange={handleInputChange}
+                type={"tel"}
+                className="my-4 form-control"
+                placeholder='Celular'
                 />
 
                 <input 
@@ -113,14 +129,14 @@ export const Checkout = () => {
                 value={values.direccion}
                 onChange={handleInputChange}
                 type={"text"} 
-                className="my-3 form-control" 
+                className="my-4 form-control" 
                 placeholder='Direccion'
                 />
 
                 <button type='submit' className='btn btn-primary'>Enviar</button>
             </form>
 
-    </div>
-  )
+        </div>
+    )
 }
 

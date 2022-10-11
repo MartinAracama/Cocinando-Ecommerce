@@ -13,19 +13,23 @@ export const Contacto = () => {
         
 
         <form onSubmit={handleSubmit}
-        className="formulario">
+          className="formulario">
           <input 
           type={"text"} 
-          className="form control my-2"
+          className="my-4 form-control"
           placeholder="Nombre y Apellido"
           />
           <input type={"email"}
-          className="form control my-2"
+          className="my-4 form-control"
           placeholder="Email"
           />
           <input type={"tel"}
-          className="form control my-2"
+          className="my-4 form-control"
           placeholder="Celular"
+          />
+          <input type={"textarea"}
+          className="my-4 form-control"
+          placeholder="Escriba sus comentarios"
           />
           <button className='btn btn-primary px-5' type="submit">Enviar</button>
         </form>

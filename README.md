@@ -1,6 +1,9 @@
+# Titulo del Proyecto: Cocinando-Ecommerce
+
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/MartinAracama/Cocinando-Ecommerce.git)
 
 ## Available Scripts
 

@@ -7,15 +7,16 @@
     .titulo {
         color: #921708;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
         margin: 5px
     }
 
     .formulario {
-        display: flex;
-        flex-direction: column;
-        max-width: 320px;
-        gap: 7px;
-        border-radius: 5px;
+        background-color: #921708;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        width: 400px;
     }
 }
 
