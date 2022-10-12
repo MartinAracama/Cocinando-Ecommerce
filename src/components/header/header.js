@@ -17,7 +17,6 @@ export const Header = () => {
                 <Link to="/productos/sartenes" className="navbar-link">Sartenes</Link>
                 <Link to="/productos/cuchillos" className="navbar-link">Cuchillos</Link>
                 <Link to="/productos/cacerolas" className="navbar-link">Cacerolas</Link>
-                <Link to="/nosotros" className="navbar-link">Nosotros</Link>
                 <Link to="/contacto" className="navbar-link">Contacto</Link>
             </nav>
                 <CartWidget/>

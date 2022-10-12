@@ -10,7 +10,7 @@ const usuarios = [
     },
     {
         email: "martin@aracama.com",
-        password: "1258"
+        password: "1966"
     },
     {
         email: "tuto@aracama.com",

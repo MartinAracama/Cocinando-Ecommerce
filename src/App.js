@@ -5,7 +5,6 @@ import { Footer } from "./components/footer/footer";
 import { ItemListContainer } from "./components/itemListContainer/itemListContainer";
 import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import { ItemDetailContainer } from './components/itemDetailContainer/itemDetailContainer';
-import { Nosotros } from "./components/Nosotros/nosotros"
 import { Contacto } from "./components/Contacto/contacto"
 import { CartCustomProvider } from "./Context/CartContext";
 import { Cart } from './components/Cart/cart';
@@ -33,7 +32,6 @@ const App = () => {
             <Route path='/login' element={ <LoginScreen/> }/>
             <Route path='/cart' element={ <Cart/> }/>
             <Route path='/checkout' element={ <Checkout/> }/>
-            <Route path='/nosotros' element={ <Nosotros/> }/>
             <Route path='/contacto' element={ <Contacto/> }/>
             
             <Route path='*' element={ <Navigate to="/"/> }/>
