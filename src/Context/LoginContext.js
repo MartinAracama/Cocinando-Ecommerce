@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react"
 
+// NO ESTA ACTIVO EL LOGIN //
 
 export const LoginContext = createContext()
 
