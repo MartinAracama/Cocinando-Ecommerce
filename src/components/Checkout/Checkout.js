@@ -1,28 +1,20 @@
-import { useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { useCartContext } from '../../Context/CartContext'
 import { addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from '../../Firebase/config'
 import "./Checkout.scss"
+import { useForm } from '../Hooks/useForm'
 
 export const Checkout = () => {
 
     const {cart, cartTotal, finalizarCompra} = useCartContext()
 
-    const [values, setValues] = useState({
+    const { values, handleInputChange } = useForm({
         nombre: "",
         email: "",
         celular: "",
         direccion: "",
     })
-
-    const handleInputChange = (e) => {
-        
-        setValues({
-            ...values,
-            [e.target.name]: e.target.value
-        })
-    }
 
     const handleSubmit = async (e)   => {
         e.preventDefault()
